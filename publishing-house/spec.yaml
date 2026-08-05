@@ -86,7 +86,7 @@ approval_checklist:
 
   content:
     prerequisites_verifiable: false
-    assessment_strategy: ""
+    assessment_strategy: "Zero-Touch lab with verify buttons per module. Module 1: automated check confirms ansible and ansible-navigator binaries are present and return expected version output. Module 2: automated check confirms the playbook ran and produced the expected output."
     catalog_gap: "No existing catalog item walks a beginner sysadmin through installing ansible-core and ansible-navigator from RHEL 10 AppStream and running their first playbook. Existing labs either assume Ansible is pre-installed, require an AAP subscription, or target RHEL broadly rather than RHEL 10 specifically."
     design_overview: "A 30-minute beginner lab for system administrators who need to set up Ansible on RHEL 10 for the first time. Participants install ansible-core and ansible-navigator from RHEL 10 AppStream repositories using standard dnf commands, then create and run a basic playbook using Ansible Navigator to verify the setup. No prior Ansible experience or AAP subscription is required."
     module_summaries:
