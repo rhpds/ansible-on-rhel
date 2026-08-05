@@ -14,8 +14,8 @@ project:
   showroom_type: "zero_touch"
   description: "Installing Ansible and ANsible Navigator on RHEL 10"
   # content_reviewer_email and infra_reviewer_email are assigned by the RHDP team — not set by the author
-  jira_ticket: ""
-  workflow_id: ""
+  jira_ticket: "RHDPCD-702"
+  workflow_id: "d326aff4-cd90-46a1-b20b-f9f87e648c04"
 
 spec:
   title: ""
