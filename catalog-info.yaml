@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ansible-on-rhel
+  title: ansible-on-rhel
+  description: Installing Ansible and ANsible Navigator on RHEL 10
+  annotations:
+    ph.rhdp.io/content-type: lab
+    ph.rhdp.io/deployment-mode: rhdp_published
+    ph.rhdp.io/github-user: prakhar1985
+    ph.rhdp.io/owner: psrivast@redhat.com
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: rhpds/ansible-on-rhel
+    ph.rhdp.io/created-at: 2026-08-05T05:52:05.808Z
+  tags:
+    - publishing-house
+    - lab
+    - rhdp-published
+  links:
+    - url: https://github.com/rhpds/ansible-on-rhel
+      title: Repository
+      icon: github
+    - url: https://devspaces.apps.ocpv-infra02.wdc07.infra.demo.redhat.com#https://github.com/rhpds/ansible-on-rhel
+      title: Open in DevSpaces
+      icon: catalog
+    - url: https://central-api-publishing-house.apps.ocpv-infra02.wdc07.infra.demo.redhat.com
+      title: Central
+      icon: dashboard
+spec:
+  type: content
+  lifecycle: experimental
+  owner: rhdp-team
+  system: publishing-house
