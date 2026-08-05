@@ -1,1 +1,3 @@
 * xref:index.adoc[Course Overview]
+* xref:module-01.adoc[1. Installing Ansible and Ansible Navigator]
+* xref:module-02.adoc[2. Running Your First Playbook]

@@ -1,0 +1,16 @@
+---
+# Solve playbook for Module 1 — runs when the learner clicks Solve
+# Use this to complete the module steps automatically.
+- name: Solve Module 1
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Install ansible-core
+      ansible.builtin.dnf:
+        name: ansible-core
+        state: present
+
+    - name: Install ansible-navigator
+      ansible.builtin.dnf:
+        name: ansible-navigator
+        state: present

@@ -1,0 +1,7 @@
+= Module 2: Running Your First Playbook
+
+== Overview
+
+In this module, you will create a basic Ansible playbook and run it using Ansible Navigator.
+
+// TODO: Add lab content here

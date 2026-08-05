@@ -1,0 +1,7 @@
+= Module 1: Installing Ansible and Ansible Navigator
+
+== Overview
+
+In this module, you will install `ansible-core` and `ansible-navigator` on your RHEL 10 system using the AppStream repositories.
+
+// TODO: Add lab content here

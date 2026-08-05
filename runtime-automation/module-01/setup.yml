@@ -1,0 +1,10 @@
+---
+# Setup playbook for Module 1 — runs once before the module starts
+# Use this to prepare the environment before the learner begins.
+- name: Setup for Module 1
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Placeholder setup task
+      ansible.builtin.debug:
+        msg: "Module 1 setup complete"

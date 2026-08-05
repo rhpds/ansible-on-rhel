@@ -1,0 +1,24 @@
+---
+# Solve playbook for Module 2 — runs when the learner clicks Solve
+# Use this to complete the module steps automatically.
+- name: Solve Module 2
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Create basic playbook
+      ansible.builtin.copy:
+        dest: ~/first-playbook.yml
+        content: |
+          ---
+          - name: My first playbook
+            hosts: localhost
+            gather_facts: false
+            tasks:
+              - name: Print hello world
+                ansible.builtin.debug:
+                  msg: "Hello from Ansible!"
+
+    - name: Run the playbook with ansible-navigator
+      ansible.builtin.command:
+        cmd: ansible-navigator run ~/first-playbook.yml --mode stdout
+      changed_when: false

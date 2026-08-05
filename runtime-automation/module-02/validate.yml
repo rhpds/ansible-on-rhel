@@ -1,0 +1,19 @@
+---
+# Validate playbook for Module 2 — runs when the learner clicks Validate
+# Use this to verify the learner completed the module steps.
+- name: Validate Module 2
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Check playbook file exists
+      ansible.builtin.stat:
+        path: ~/first-playbook.yml
+      register: playbook_stat
+      failed_when: not playbook_stat.stat.exists
+
+    - name: Run the playbook and verify output
+      ansible.builtin.command:
+        cmd: ansible-navigator run ~/first-playbook.yml --mode stdout
+      register: playbook_run
+      changed_when: false
+      failed_when: playbook_run.rc != 0

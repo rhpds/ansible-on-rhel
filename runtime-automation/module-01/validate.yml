@@ -1,0 +1,18 @@
+---
+# Validate playbook for Module 1 — runs when the learner clicks Validate
+# Use this to verify the learner completed the module steps.
+- name: Validate Module 1
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Check ansible binary exists
+      ansible.builtin.command: ansible --version
+      register: ansible_version
+      changed_when: false
+      failed_when: ansible_version.rc != 0
+
+    - name: Check ansible-navigator binary exists
+      ansible.builtin.command: ansible-navigator --version
+      register: navigator_version
+      changed_when: false
+      failed_when: navigator_version.rc != 0
