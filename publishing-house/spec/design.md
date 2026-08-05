@@ -53,16 +53,14 @@ Beginner
 
 ## Infrastructure Requirements
 
-- **Cloud provider:** TBD — confirmed in infrastructure phase
-- **Cluster type:** TBD — confirmed in infrastructure phase
-- **OCP version:** TBD — confirmed in infrastructure phase
-- **Topology:** TBD — confirmed in infrastructure phase
-- **Sizing:** TBD — confirmed in infrastructure phase
-- **Automation approach:** TBD — confirmed in infrastructure phase
-- **AI/MaaS:** TBD — confirmed in infrastructure phase
-- **External services:** TBD — confirmed in infrastructure phase
-- **AAP version:** TBD — confirmed in infrastructure phase
-- **Non-GA products:** TBD — confirmed in infrastructure phase
+- **Platform:** RHEL VMs (provisioned via CNV)
+- **Cloud provider:** CNV
+- **Topology:** Per-student
+- **Per-student sizing:** 1 × RHEL 10 VM (2 vCPU, 8GB RAM, 20GB disk)
+- **Automation approach:** TBD — confirmed by infra reviewer
+- **AI/MaaS:** None
+- **External services:** cdn.redhat.com (AppStream package downloads)
+- **Non-GA products:** None (all products are GA)
 
 ## Assessment Strategy (Optional)
 
