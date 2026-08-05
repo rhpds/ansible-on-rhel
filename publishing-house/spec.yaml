@@ -78,11 +78,26 @@ approval_checklist:
   content:
     prerequisites_verifiable: false
     assessment_strategy: ""
-    catalog_gap: ""
+    catalog_gap: "No existing catalog item walks a beginner sysadmin through installing ansible-core and ansible-navigator from RHEL 10 AppStream and running their first playbook. Existing labs either assume Ansible is pre-installed, require an AAP subscription, or target RHEL broadly rather than RHEL 10 specifically."
     design_overview: ""
     module_summaries: []
-    rcars_overlap_pct: null
-    rcars_top_matches: []
+    rcars_overlap_pct: 65
+    rcars_top_matches:
+      - title: "Ansible Workshop - Ansible for Red Hat Enterprise Linux (90 mins)"
+        ci_name: "zt-ansiblebu.zt-ans-bu-rhel-90.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=zt-ansiblebu.zt-ans-bu-rhel-90.prod"
+        relevance_score: 65
+        why_it_fits: "This beginner-level workshop introduces Ansible on RHEL, covering playbook authoring, inventory management, and core modules — directly relevant to an audience learning Ansible fundamentals on RHEL. However, it does not specifically cover installing ansible-core or ansible-navigator from AppStream repositories."
+      - title: "Getting started with Ansible Navigator"
+        ci_name: "zt-ansiblebu.zt-ans-bu-ansible-nav.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=zt-ansiblebu.zt-ans-bu-ansible-nav.prod"
+        relevance_score: 62
+        why_it_fits: "This beginner lab directly teaches ansible-navigator usage, TUI navigation, and running playbooks. However, it focuses on AAP 2 execution environments rather than installing ansible-core and ansible-navigator from RHEL AppStream repositories."
+      - title: "RHEL 10 Base"
+        ci_name: "sandboxes-gpte.rhel10-base.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=sandboxes-gpte.rhel10-base.prod"
+        relevance_score: 52
+        why_it_fits: "This lab runs on RHEL 10 and includes hands-on Ansible playbook execution using RHEL System Roles. However, it does not cover installing ansible-core or ansible-navigator from AppStream, and is rated intermediate rather than beginner."
     rejections: []
 
   infra:
